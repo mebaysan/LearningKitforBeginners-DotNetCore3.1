@@ -6073,11 +6073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore\\ASPNetCoreIntro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj",
+      "projectUniqueName": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCoreIntro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj",
       "projectName": "ASPNetCoreIntro",
-      "projectPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore\\ASPNetCoreIntro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj",
+      "projectPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCoreIntro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj",
       "packagesPath": "C:\\Users\\menes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore\\ASPNetCoreIntro\\ASPNetCoreIntro\\obj\\",
+      "outputPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCoreIntro\\ASPNetCoreIntro\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

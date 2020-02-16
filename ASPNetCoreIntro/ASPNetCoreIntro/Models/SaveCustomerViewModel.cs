@@ -1,4 +1,5 @@
 ﻿using ASPNetCoreIntro.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,8 @@ namespace ASPNetCoreIntro.Models
 {
     public class SaveCustomerViewModel
     {
-        public Customer Customer { get; set; }
+         public Customer Customer { get; set; }
+        public List<SelectListItem> Cities { get; set; } // SelectListItem -> select box'taki elemanların her biri
+
     }
 }

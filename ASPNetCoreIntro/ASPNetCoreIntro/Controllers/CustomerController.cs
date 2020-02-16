@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ASPNetCoreIntro.Entities;
 using ASPNetCoreIntro.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ASPNetCoreIntro.Controllers
 {
@@ -32,7 +33,17 @@ namespace ASPNetCoreIntro.Controllers
         [HttpGet] // işaretlemezsek default olarak HttpGet'tir.
         public IActionResult SaveCustomer()
         {
-            return View(new SaveCustomerViewModel());
+            var model = new SaveCustomerViewModel()
+            {
+                Cities = new List<SelectListItem>
+                {
+                    new SelectListItem{Text="Ankara",Value="06"}, 
+                    new SelectListItem{Text="İstanbul",Value="34"},
+                    new SelectListItem{Text="İzmir",Value="35"},
+                    // Text -> görünen değer, Value -> seçilince gelecek değer
+                }
+            };
+            return View(model);
         }
 
         [HttpPost]
