@@ -35,7 +35,7 @@ namespace ASPNetCoreIntro
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Customer/Error"); // Customer altında Error view'ı çalışacak
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -48,9 +48,14 @@ namespace ASPNetCoreIntro
 
             app.UseEndpoints(endpoints =>
             {
+                // conventional routing
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "default", // default olarak bu routing kullanılır
                     pattern: "{controller=Product}/{action=Index}/{id?}"); // default routing ayarlarını belirlediğimiz kısım
+
+                endpoints.MapControllerRoute(
+                    name: "admin", // routing'e isim verdik
+                    pattern: "admin/{controller=Admin}/{action=Index}/{id?}"); // routing tasarımını yazdık -> domain.com/admin/controller_name/action_name/id? -> admin/ sabit yani
             });
         }
     }

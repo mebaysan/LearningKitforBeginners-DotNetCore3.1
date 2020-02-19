@@ -121,11 +121,8 @@ C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASP
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\ASPNetCoreIntro.RazorCoreGenerate.cache
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Index.cshtml.g.cs
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Customer\SaveCustomer.cshtml.g.cs
-C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -219,3 +216,7 @@ C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASP
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\ASPNetCoreIntro.Views.pdb
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\ASPNetCoreIntro.csproj.CopyComplete
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_MyLayout.cshtml.g.cs
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Error.cshtml.g.cs
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASPNetCoreIntro\ASPNetCoreIntro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs

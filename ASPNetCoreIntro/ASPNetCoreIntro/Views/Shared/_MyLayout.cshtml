@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title> <!-- ViewBag'in ("View Değişkeni") içerisinde Title diye bir değişken olacak onu al ve buraya set et dedik.  -->
+</head>
+<body>
+    <div>
+        Menü
+    </div>
+    <div>
+        @RenderBody()<!-- view eğer layout'tan besleniyorsa buraya yerleşir. Django'daki block gibi düşünebiliriz -->
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @RenderSection("OzelScriptler", required: false) <!-- Django'daki block mantığı. ilk parametre section name, ikincisi zorunluluk durumu. Bir sayfada bu section olmak zorunda mı'yı belirttiğimiz parametre 2.  -->
+</body>
+</html>

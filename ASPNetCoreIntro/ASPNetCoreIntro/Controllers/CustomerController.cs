@@ -9,8 +9,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ASPNetCoreIntro.Controllers
 {
+    // bir controller'a attribute routing eklersek bütün aksiyonları attribute routing yapmalıyız. Kısaca: "attribute routing > conventional routing"
+    [Route("customer")] // klasik isimlendirme -> controller adı
     public class CustomerController : Controller
     {
+        [Route("index")] // domain.com/customer/index
+        [Route("")] // domain.com/customer/  -> yani action ismi belirtilmese de bu action çalışsın
+        [Route("~/anasayfa")] // domain.com/anasayfa  -> bu şekilde url gelirse bu aksiyon çalışacak. Ön ek (controller name) önemsizleşir.
         public IActionResult Index()
         {
             List<Customer> customers = new List<Customer>
@@ -31,13 +36,14 @@ namespace ASPNetCoreIntro.Controllers
         }
 
         [HttpGet] // işaretlemezsek default olarak HttpGet'tir.
+        [Route("save")] // domain.com/customer/save  -> Request == Get
         public IActionResult SaveCustomer()
         {
             var model = new SaveCustomerViewModel()
             {
                 Cities = new List<SelectListItem>
                 {
-                    new SelectListItem{Text="Ankara",Value="06"}, 
+                    new SelectListItem{Text="Ankara",Value="06"},
                     new SelectListItem{Text="İstanbul",Value="34"},
                     new SelectListItem{Text="İzmir",Value="35"},
                     // Text -> görünen değer, Value -> seçilince gelecek değer
@@ -47,6 +53,7 @@ namespace ASPNetCoreIntro.Controllers
         }
 
         [HttpPost]
+        [Route("save")] // domain.com/customer/save  -> Request == Post
         public string SaveCustomer(Customer customer) // parametre alıyoruz
         {
 
