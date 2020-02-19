@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASPNetCoreIntro.Services.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -21,9 +22,13 @@ namespace ASPNetCoreIntro
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services) // çalýþma anýnda çalýþacak methodlar. CustomerController içerisindeki ILogger servisimizi burada belirtmeliyiz (Dependency Injection)
         {
             services.AddControllersWithViews();
+            //services.AddScoped<ILogger, DatabaseLogger>(); // bu þu demektir -> birisi constructor'ýnda ILogger isterse ona DatabaseLogger'ý ver. Kim ILogger isterse mesela ctor'da 2 adet ILogger instance isterse o ikisi de aslýnda tek bir ILogger instance'dir. Tek istekte ne kadar ILogger istenirse istensin hepsine ayný instance'i verir.
+            services.AddSingleton<ILogger, DatabaseLogger>(); // bu þu demektir -> birisi constructor'ýnda ILogger isterse ona DatabaseLogger'ý ver. Fakat arkada 1 adet ILogger instance oluþturur ctor'da bunu isteyen herkese ayný instance'ý verir. Ayný zamanda singleton "bellekte tutulur"
+            //services.AddTransient<ILogger, DatabaseLogger>(); // bu þu demektir -> birisi constructor'ýnda ILogger isterse ona DatabaseLogger'ý ver. Tek istekte ne kadar ILogger istenirse o kadar instance oluþturur ve her birine ayrý instance'ler verir.
+            services.AddSession(); // session alt yapýsýný sisteme tanýmlýyoruz/dahil ediyoruz
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +48,8 @@ namespace ASPNetCoreIntro
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession(); // middleware olarak da session altyapýsýný eklemeliyiz
 
             app.UseAuthorization();
 

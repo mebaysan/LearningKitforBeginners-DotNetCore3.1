@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ASPNetCoreIntro.Entities;
 using ASPNetCoreIntro.Models;
+using ASPNetCoreIntro.Services.Logging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -13,11 +14,19 @@ namespace ASPNetCoreIntro.Controllers
     [Route("customer")] // klasik isimlendirme -> controller adı
     public class CustomerController : Controller
     {
+
+        private ILogger _logger; // class'ın fieldı
+        public CustomerController(ILogger logger) // constructor
+        {
+            _logger = logger;
+        }
+
         [Route("index")] // domain.com/customer/index
         [Route("")] // domain.com/customer/  -> yani action ismi belirtilmese de bu action çalışsın
         [Route("~/anasayfa")] // domain.com/anasayfa  -> bu şekilde url gelirse bu aksiyon çalışacak. Ön ek (controller name) önemsizleşir.
         public IActionResult Index()
         {
+            _logger.Log("");
             List<Customer> customers = new List<Customer>
             {
                 new Customer{Id=1,FirstName="Enes",LastName="Baysan",City="İstanbul"},
