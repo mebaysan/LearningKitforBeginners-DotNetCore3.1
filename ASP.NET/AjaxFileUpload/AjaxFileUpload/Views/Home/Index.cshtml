@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/static/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/static/node_modules/bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet" />
+    <script src="~/static/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/static/node_modules/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <title>Ajax File Upload</title>
+</head>
+<body>
+    <br /><br /><br /><br /><br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="islemDurum" class="alert alert-success" style="display:none;">
+                    Dosyalar yüklendi
+                </div>
+                <input type="file" name="dosyalar" id="dosyalar" multiple />
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        $("#dosyalar").fileinput({
+            language: 'tr',
+            uploadAsync: true,
+            dropZoneTitle: 'Resimlerinizi buraya sürükleyebilirsiniz...',
+            browseLabel: 'Resim Seçiniz...',
+            uploadLabel: 'Karşıya Yükle',
+            uploadUrl:"@Url.Action("Index","Home")",
+            resizeImage:true,
+            maxFileCount: 10,
+            maxImageWidth: 800,
+            maxImageHeight: 600,
+            resizePreference: 'width',
+            resizeImageQuality: 0.75
+        });
+        $("#dosyalar").on('filebatchuploadcomplete', () => {
+            $("#islemDurum").css({ "display": "block" });
+
+        });
+    </script>
+
+
+
+</body>
+</html>
