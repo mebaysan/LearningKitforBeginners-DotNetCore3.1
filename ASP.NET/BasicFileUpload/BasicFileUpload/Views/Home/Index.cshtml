@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Basit Dosya Yükleme";
+}
+
+<h2>Basit Dosya Yükleme</h2>
+
+
+<form action="/" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="dosya">Dosya Seçin</label>
+        <input type="file" class="form-control-file" id="dosya" name="dosya">
+    </div>
+    <button class="btn btn-primary" type="submit">Yükle</button>
+</form>
+<br />
+<span class="badge badge-pill badge-danger">@ViewData["uyari"]</span>
+
+
+@section OzelScript{
+    <script>
+        console.log("OzelScript section çalıştı");
+
+
+    </script>
+
+}
