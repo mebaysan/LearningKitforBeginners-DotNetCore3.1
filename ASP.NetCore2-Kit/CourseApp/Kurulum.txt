@@ -1,0 +1,22 @@
+mkdir projeAdi
+cd projeAdi
+dotnet new web -> boş bir asp.net core projesi oluşturur(model  view controller'ı biz kendimiz oluşturacağız)
+
+ctrl + p  -> istediğimiz dosyayı aramamızı sağlar.
+
+dotnet run -> projeyi derler ve çalıştırır
+ dotnet watch run  -> uygulamayı bir kere çalıştırır ve her değişiklik yaptığınızda restart atar (nodemon gibi)
+
+ settings -> emmet -> edit:
+  "emmet.includeLanguages": {
+        "aspnetcorerazor":"html"
+    }  
+    Bu kodu ekle ve cshtml sayfalarında html'i daha rahat kulan
+
+
+
+dotnet new viewimport -> view'larda işimizi kolaylaştıracak(views klasörü altına)
+
+
+
+npm install bootstrap -> bootstrap'i projeye yükler

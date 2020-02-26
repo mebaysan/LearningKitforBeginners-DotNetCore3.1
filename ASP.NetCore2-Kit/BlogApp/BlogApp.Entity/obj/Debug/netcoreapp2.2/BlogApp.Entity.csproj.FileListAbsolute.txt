@@ -1,0 +1,12 @@
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\bin\Debug\netcoreapp2.2\BlogApp.Entity.deps.json
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\bin\Debug\netcoreapp2.2\BlogApp.Entity.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\bin\Debug\netcoreapp2.2\BlogApp.Entity.pdb
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.csproj.CoreCompileInputs.cache
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.AssemblyInfoInputs.cache
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.AssemblyInfo.cs
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.pdb
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.csprojAssemblyReference.cache
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\meb\source\repos\BlogApp\BlogApp.Entity\obj\Debug\netcoreapp2.2\BlogApp.Entity.csproj.CopyComplete

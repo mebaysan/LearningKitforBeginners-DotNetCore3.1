@@ -1,0 +1,16 @@
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\BlogApp.Data.deps.json
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\BlogApp.Data.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\BlogApp.Data.pdb
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.AssemblyInfoInputs.cache
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.AssemblyInfo.cs
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.pdb
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.csprojAssemblyReference.cache
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\BlogApp.Entity.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\BlogApp.Entity.pdb
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\obj\Debug\netcoreapp2.2\BlogApp.Data.csproj.CopyComplete
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\meb\source\repos\BlogApp\BlogApp.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.xml

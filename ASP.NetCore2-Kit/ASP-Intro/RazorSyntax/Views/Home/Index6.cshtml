@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--  HttpUtility Helper      -->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index6</title>
+</head>
+<body>
+    @HttpUtility.HtmlEncode("<b>Baysan</b>") <br /> <!-- html kodlarını encode eder   -->
+    @HttpUtility.HtmlDecode("&lt;b&gt;Baysan&lt;/b&gt;") <br />
+
+    <hr />
+    @Html.Raw("<b>Baysan</b>") <!--  html kodlarını sayfada etki ederek tepkimesini sağlar.   -->
+    <hr />
+    @Html.Raw("<script type='text/javascript'> alert('merhaba mvc'); </script>")
+</body>
+</html>

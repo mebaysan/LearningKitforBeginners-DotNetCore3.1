@@ -1,0 +1,20 @@
+﻿@model HomeBlogModel
+    @{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                @await Component.InvokeAsync("CategoryMenu") <!-- arkada yazdığımız component'i çağırdık -->
+            </div>
+            <div class="col-md-9">
+                @Html.Partial("_Slider", Model.SliderBlogs)
+                @Html.Partial("_BlogList", Model.HomeBlogs)
+
+            </div>
+        </div>
+    </div>
+

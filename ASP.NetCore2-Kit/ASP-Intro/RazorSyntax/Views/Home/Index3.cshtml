@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index3";
+}
+
+<h2>Index3</h2>
+
+<input type="button" value="AnaSayfaya git!" />
+<br />
+@Html.ActionLink("AnaSayfaya git!", "Index", new { title = "Index sayfasına sizi yönlendirir" })
+<!-- HomeController vermeden nasıl homecontroller'a gitti? Şu anda mevcut bulunduğu controller altında otomatik yönlendirir. eğer başka bir controller altına gideceksek 3. parametre olarak O controller adını vermemiz gerekir.
+    ("Anasayfa2ye git!","Index","Home2") -> Home2Controller altında Index Action'a git.-->
+<!-- ikiside aynı şeyi yapacaktır. Bunlara ASP'de HTML helpers denir.   -->
+<br />
+@Html.TextBox("ad", "Adınız")
+<br />
+@Html.TextArea("bio", "Özgeçmişiniz", 4, 100, null)
+<!--  verdiğimiz ilk değer html attribute name gibidir. İkinci parametre value'dir.-->

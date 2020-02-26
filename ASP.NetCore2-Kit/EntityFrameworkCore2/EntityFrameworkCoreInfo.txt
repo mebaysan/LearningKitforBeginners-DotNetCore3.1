@@ -1,0 +1,6 @@
+migraiton yapmak için;
+dotnet ef migrations add initial    // initial adında bir başlangıç scripti oluşturacak. DbContext'i bulacak ve ona göre bir db oluşturacak
+
+dotnet ef database update // initial adındaki scripti biz kendimiz çalıştırmış olduk
+
+dotnet ef database update istediginAd  // parametre olarak verdiğin database haline gider

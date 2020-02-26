@@ -1,0 +1,21 @@
+﻿@using RazorSyntax.Library
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index4</title>
+</head>
+<body>
+    <div>
+        @Html.Button("btnOk", ButtonType.button, "Gönder")
+        <br />
+        @Html.ButtonWithTagBuilder("btnOkk",ButtonType.submit,"Submit")
+    </div>
+    
+</body>
+</html>

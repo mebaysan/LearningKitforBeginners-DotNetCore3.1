@@ -1,0 +1,36 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+<br />
+<form asp-controller="Home" asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Category">Category</label>
+        <select asp-for="Category" asp-items="@ViewBag.Categories" class="form-control">
+            <!--  new SelectList(Enum.GetNames(typeof(EnumCategories)))  -->
+            <option selected disabled>Select Category</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Description">Description</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Price">Price</label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" asp-for="isApproved" />
+            IS Approved
+        </label>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary" />
+</form>

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+@{
+    /*
+     * Razor Syntax, html kodları içerisinde C# kodları yazabilmemizi sağlar.
+     * @{ } -> bir razor bloğu açılır.
+     */
+    string ad = "Enes";
+    string soyad = "Baysan";
+}
+<b>@ad</b>
+<h3>Benim adım @(ad + "" + soyad)</h3>
+@*  Burası Açıklama satırıdır. Razor açıklama satırı. *@
+<!-- HTML açıklama satırları kullanıcı tarafından gözükebilir-->
+@* Fakat Razor açıklama satırları kullanıcı tarafından gözükmez *@

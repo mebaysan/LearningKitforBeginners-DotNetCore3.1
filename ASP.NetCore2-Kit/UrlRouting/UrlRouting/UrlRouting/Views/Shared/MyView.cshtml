@@ -1,0 +1,36 @@
+﻿@model Result
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="/modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body class="m-1 p-1">
+    <table class="table table-bordered table-striped table-sm">
+        <tr>
+            <td>Controller</td>
+            <th>@Model.Controller</th>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <th>@Model.Action</th>
+        </tr>
+        @foreach (var key in Model.RouteData.Keys)
+        {
+            <tr>
+                <td>@key</td>
+                <th>
+                    @Model.RouteData[key]
+                </th>
+
+            </tr>
+        }
+    </table>
+</body>
+</html>

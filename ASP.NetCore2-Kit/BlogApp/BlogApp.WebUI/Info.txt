@@ -1,0 +1,2 @@
+ dotnet ef migrations add InitialCreate -> migration oluşturdu
+dotnet ef database update -> database'i oluşturur

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Search</h1>
+<br />
+
+<form action="/Home/Search" method="get">
+    <!-- burdan gönderilen bilgiler http request'in body'si içerisine girmez.Url içine girer   -->
+    <div class="form-group">
+        <label for="q"></label>
+        <input type="text" name="q" id="q" class="form-control"/>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+</form>

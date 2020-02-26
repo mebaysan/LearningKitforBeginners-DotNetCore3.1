@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!-- URL HELPER   -->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index5</title>
+</head>
+<body>
+    @Html.ActionLink("Index Sayfasına git!", "Index")
+    <hr />
+    <a id="1" name="link1" href="@Url.Action("Index", "Home", null)">Index'e git</a>
+    <!-- url oluşturdu burası(Url.Action("Index", "Home", null)). Html kodu oluşturmaz. Url'e ait Controller Action'ı, Bağlı olduğu Controller   -->
+</body>
+</html>

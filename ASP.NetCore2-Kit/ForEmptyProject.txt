@@ -1,0 +1,52 @@
+-Controllers
+-Views
+-Models
+Bu üç klasörü projenin ana dizinine ekle
+Views altına
+-Viewimports
+-Viewstarts
+Bu iki item'i Views altına ekle
+-Shared
+Bu klasörü Views altına oluştur
+-_Layout.cshtml
+Bu dosyayı shared altına oluştur
+------------------------------------------------------------------
+Startup.cs İçerisinie ;
+app.UseStaticFiles(); // wwwroot
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
+                RequestPath = "/modules"
+            }); // dosya yolunu gösteriyoruz ve dosyaları dışarı açıyoruz
+
+Ekle
+
+
+Route ayarı için (startup.cs);
+ilk seçenek -> app.UseMvcWithDefaultRoute();
+ikinci seçenek -> app.UseMvc(routes=>{
+               routes.MapRoute(
+                   name:"default",
+                   template:"{controller=Home}/{action=Index}/{id?}" // controller=Home action=Index -> default route'ı belirledik. Kullanıcı direk localhost:5000(anasayfa) tıklayınca home controller'a git ve Index action'u çağır
+               );
+           });
+
+
+
+Viewimports içerisine;
+@using ProjeAdi.Models // view'larda rahatça model kullanabileceğiz
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers // tag helper dahil ettik
+
+
+
+.Net Core 2 için (startup.cs içine services altına;
+ services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2); // sdk versiyon belirttik
+
+
+
+
+
+
+MVC İÇİN BESMELE ÇEKTİK DENEBİLİR BU AYARLARDAN SONRA KODLAMAYA BAŞLAYABİLİRSİNİZ :)

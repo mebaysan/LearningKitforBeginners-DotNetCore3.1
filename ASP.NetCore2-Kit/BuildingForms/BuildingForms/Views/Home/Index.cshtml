@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Product List</h1>
+
+<table class="table table-sm table-bordered">
+    <thead class="bg-primary text-white">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Is Approved</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Category</td>
+                <td>
+                    @if (@item.isApproved)
+                    {
+                        <span class="badge badge-pill badge-success">Onaylı</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-pill badge-warning">Onay Bekliyor</span>
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-danger btn-sm" asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id">Update</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary" asp-controller="Home" asp-action="Create">Create</a>

@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>Emmet (Zen - Coding)</h3>
+    <h5>Extensions Kısmından 'Web Essentials' paketini kurabiliriz.</h5>
+    <!-- div>ul>li>p{buraya metin girilecek} -> tab basarsan alt alta bu etiketleri oluşturacak.   -->
+    <div>
+        <ul>
+            <li>
+                <p>buraya metin girilecek</p>
+            </li>
+        </ul>
+    </div>
+    <!--div.style1 -> element.classAdi ile hızlıca elementlere class özelliği verebiliriz-->
+    <div class="style1"></div>
+    <!--div#myDiv -> element#idAdi -> # ile hızlıca elementlere id verebiliriz.-->
+    <div id="myDiv"></div>
+    <!--ul>li.sinif1#Id*5 -> ul altına 5 tane li koy ve class ve id belirle-->
+    <ul>
+        <li id="ID" class="sinif1"></li>
+        <li id="ID" class="sinif1"></li>
+        <li id="ID" class="sinif1"></li>
+        <li id="ID" class="sinif1"></li>
+        <li id="ID" class="sinif1"></li>
+    </ul>
+    <!-- ul>li.sinif$*5 -> class'ı 'sınıf1' ile başla ve 1 arttırarak 5 kere tekrar et. -->
+    <ul>
+        <li class="sinif1"></li>
+        <li class="sinif2"></li>
+        <li class="sinif3"></li>
+        <li class="sinif4"></li>
+        <li class="sinif5"></li>
+    </ul>
+    <!-- div>lorem -> deneme yazıları yazmak için 'lorem' kelimesini yazıp tab basabiliriz eğer paragraf kısa veya uzun gelirse kelime sayısını belirleyebiliriz. -> lorem100       -->
+    <div>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+    <!-- a[href="./deneme.jpg" class="btn btn-success"]>lorem2    -> bir elementin attribute'larını direk verdik.   -->
+    <a href="./deneme.jpg" class="btn btn-success">Dolor sit.</a>
+    <!-- (ul>li>p>lorem10)+hr+br  -> biraz daha kontrollü gitmemize yarayabilir   -->
+    <ul>
+        <li>
+            <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+        </li>
+    </ul>
+    <hr /><br />
+    <!--
+        > : bir alt elemente geçme
+        + : aynı seviyede element oluşturma
+        . : class ismi
+        # : id ismi
+        $ : sayı arttırır
+        * : tekrar eder(iterate)
+       [] : attribute belirlememizi sağlar
+       {} : metin girmemizi sağlar
+        ^ : bir üst seviyedeki elemente ulaşıyoruz
+        
+    -->
+</body>
+</html>

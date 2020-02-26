@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            @await Component.InvokeAsync("CategoryMenu") <!-- arkada yazdığımız component'i çağırdık -->
+        </div>
+        <div class="col-md-9">
+            @if (Model.Count() == 0)
+            {
+                TempData["message"] = "Görüntülenecek makale bulunmuyor";
+            }
+            else
+            {
+                @Html.Partial("_BlogList", Model)
+            }
+
+        </div>
+    </div>
+</div>
