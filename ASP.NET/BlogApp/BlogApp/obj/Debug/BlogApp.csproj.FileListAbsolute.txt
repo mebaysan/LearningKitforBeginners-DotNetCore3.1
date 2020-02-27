@@ -69,3 +69,7 @@ C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\Blo
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\obj\Debug\BlogApp.csproj.CopyComplete
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\obj\Debug\BlogApp.dll
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\obj\Debug\BlogApp.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\bin\EntityFramework.dll
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\bin\EntityFramework.SqlServer.dll
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\bin\EntityFramework.xml
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\BlogApp\BlogApp\bin\EntityFramework.SqlServer.xml
