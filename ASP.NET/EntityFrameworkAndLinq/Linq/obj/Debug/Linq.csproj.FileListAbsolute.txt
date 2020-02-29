@@ -1,0 +1,6 @@
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\bin\Debug\Linq.exe.config
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\bin\Debug\Linq.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\bin\Debug\Linq.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\obj\Debug\Linq.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\obj\Debug\Linq.pdb
