@@ -1,33 +1,36 @@
-﻿@model IEnumerable<BlogApp.Models.Category>
+﻿@model IEnumerable<BlogApp.Models.CategoryIndexViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Kategori Listesi";
 }
 
-<h2>Index</h2>
-
+<h2>Kategori Listesi</h2>
+<hr />
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Kategori Ekle", "Create", null, new { @class = "btn btn-primary" })
 </p>
-<table class="table">
+<table class="table table-bordered table-hover table-striped">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
+        <th style="width:60%;">
+            @Html.DisplayNameFor(model => model.CategoryName)
         </th>
-        <th></th>
+        <th style="width:10%;">@Html.DisplayNameFor(model => model.BlogCount)</thstyle>
+        <th style="width:30%;"></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>@item.BlogCount</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-info btn-xs" })
+                @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-success btn-xs" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-xs" })
+            </td>
+        </tr>
+    }
 
 </table>
