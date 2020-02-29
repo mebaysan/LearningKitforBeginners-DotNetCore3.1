@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BlogApp.Models.HomeIndexViewModel>
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+<h2>Blog Listesi</h2>
+
+@Html.Partial("_BlogList", Model)
+
+@section SagKolon{
+    @{Html.RenderAction("CategoryList", "Category");}
+    <!-- ActionName,ControllerName -->
+}
+

@@ -54,7 +54,7 @@ namespace BlogApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name")] Category category)
+        public ActionResult Create([Bind(Include = "Name")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -92,6 +92,7 @@ namespace BlogApp.Controllers
             {
                 db.Entry(category).State = EntityState.Modified;
                 db.SaveChanges();
+                TempData["Message"] = category.Name + " başarıyla güncellendi!";
                 return RedirectToAction("Index");
             }
             return View(category);
@@ -130,6 +131,13 @@ namespace BlogApp.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public PartialViewResult CategoryList()
+        {
+
+            return PartialView("_CategoryList", db.Categories.ToList());
+            // partial view döndürüyoruz
         }
     }
 }

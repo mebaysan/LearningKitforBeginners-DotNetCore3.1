@@ -1,82 +1,60 @@
 ﻿@model BlogApp.Models.Blog
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Blog Detay";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Blog</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AddedDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AddedDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsPublish)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsPublish)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsInHomePage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsInHomePage)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImagePath)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImagePath)
-        </dd>
-
-    </dl>
-</div>
+<h1>@Model.Title</h1>
+<hr />
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    <span class="glyphicon glyphicon-time"></span> @Model.AddedDate
 </p>
+<hr />
+<img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+<hr />
+<blockquote>
+    <p>@Model.Description</p>
+</blockquote>
+<p>@Model.Content</p>
+<hr />
+<div class="comment">
+    <div class="well">
+        <h4>Yorum Bırak</h4>
+        <form role="form">
+            <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+    <hr />
+    <div class="media">
+        <img class="mr-3" src="http://placehold.it/64x64" alt="Generic placeholder image">
+        <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-3" src="http://placehold.it/64x64" alt="Generic placeholder image">
+        <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-3" src="http://placehold.it/64x64" alt="Generic placeholder image">
+        <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+    </div>
+</div>
+
+
+@section SagKolon{
+    @Html.Partial("_BlogSearch")
+    @{Html.RenderAction("CategoryList", "Category");}
+}
+
