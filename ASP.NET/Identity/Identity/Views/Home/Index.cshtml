@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<hr />
+<!-- django'dan bildiğimiz if request.user.is_authenticated yani kullanıcı login olmuşsa true döndürür -->
+@if (User.Identity.IsAuthenticated)
+{
+    <label class="label label-info">@User.Identity.Name</label>
+    <a href="@Url.Action("Logout","Account")" class="btn btn-warning">Logout</a>
+
+}
+else
+{
+    <a href="@Url.Action("Login","Account")" class="btn btn-info">Login</a>
+    <a href="@Url.Action("Register","Account")" class="btn btn-primary">Register</a>
+}

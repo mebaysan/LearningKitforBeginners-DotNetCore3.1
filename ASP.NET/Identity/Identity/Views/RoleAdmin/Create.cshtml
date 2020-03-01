@@ -1,0 +1,17 @@
+﻿@model string
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Role</h2>
+<hr />
+
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label>Role Name</label>
+        <input type="text" value="@Model" name="name" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-info">Add Role</button>
+}
