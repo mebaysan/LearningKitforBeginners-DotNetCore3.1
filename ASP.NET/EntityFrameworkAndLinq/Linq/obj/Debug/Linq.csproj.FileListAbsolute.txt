@@ -4,3 +4,17 @@ C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\b
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\obj\Debug\Linq.exe
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\Linq\Linq\obj\Debug\Linq.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\Linq.exe.config
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\Linq.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\Linq.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\obj\Debug\Linq.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\obj\Debug\Linq.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFrameworkSamples.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFramework.dll
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFrameworkSamples.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFrameworkSamples.exe.config
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFramework.xml
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\obj\Debug\Linq.csproj.CopyComplete
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\Linq\bin\Debug\EntityFramework.SqlServer.xml

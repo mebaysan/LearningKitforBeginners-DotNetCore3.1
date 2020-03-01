@@ -19,3 +19,14 @@ C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrame
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFramework\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.CopyComplete
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFramework\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.exe
 C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFramework\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFrameworkSamples.exe.config
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFrameworkSamples.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFrameworkSamples.pdb
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFramework.dll
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFramework.xml
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csprojAssemblyReference.cache
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.CopyComplete
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.exe
+C:\Users\menes\Desktop\LearningKitforBeginners-DotNetCore3.1\ASP.NET\EntityFrameworkAndLinq\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.pdb

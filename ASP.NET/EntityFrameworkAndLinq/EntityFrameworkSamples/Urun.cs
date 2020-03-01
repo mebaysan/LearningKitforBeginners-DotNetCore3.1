@@ -16,7 +16,7 @@ namespace EntityFrameworkSamples
         public int KategoriId { get; set; }
 
 
-        // burası  program anında kullanılacak
+        // burası  program anında kullanılacak. Navigation Property denir. Entity'ler arasında geçişi sağlar
         public Kategori Kategori { get; set; }
 
         public List<Tedarikci> Tedarikciler { get; set; }
