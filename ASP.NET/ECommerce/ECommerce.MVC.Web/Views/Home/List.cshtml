@@ -1,0 +1,108 @@
+﻿@model  ECommerce.MVC.Web.Models.ProductListViewModel
+@{
+    ViewBag.Title = "List";
+}
+
+<main>
+    <!-- introBannerHolder -->
+    <section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(/Uploads/Product/1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
+                    <h1 class="headingIV fwEbold playfair mb-4">Alış-Veriş</h1>
+                    <ul class="list-unstyled breadCrumbs d-flex justify-content-center">
+                        <li class="mr-2"><a href="/">Anasayfa</a></li>
+                        <li class="mr-2">/</li>
+                        <li class="active">Alış-Veriş</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- twoColumns -->
+    <div class="twoColumns container pt-lg-23 pb-lg-20 pt-md-16 pb-md-4 pt-10 pb-4">
+        <div class="row">
+            <div class="col-12 col-lg-9 order-lg-3">
+                <!-- content -->
+                <article id="content">
+                    <!-- show-head -->
+                    
+                    <div class="row">
+                        <!-- featureCol -->
+                        @if (Model.Products.Count() == 0)
+                        {
+                            <h1>Ürün Bulunamadı</h1>
+                        }
+                        @foreach (var item in Model.Products)
+                        {
+                            <div class="col-12 col-sm-6 col-lg-4 featureCol mb-7">
+                                <div class="border">
+                                    <div class="imgHolder position-relative w-100 overflow-hidden">
+                                        <img src="~/Uploads/Product/@item.Image" alt="@item.Name" class="img-fluid w-100">
+                                        <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
+                                            <li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
+                                            <li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
+                                            <li class="mr-2 overflow-hidden"><a href="/Home/Details/@item.Id" class="icon-eye d-block"></a></li>
+                                            <li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center py-5 px-4">
+                                        <span class="title d-block mb-2"><a href="shop-detail.html">@item.Name</a></span>
+                                        <span class="price d-block fwEbold">@item.Price ₺</span>
+                                        @*<del>80.50 $</del>*@
+                                        @{
+                                            TimeSpan kacGun = DateTime.Now - item.AddedTime;
+                                            double gunSayi = kacGun.TotalDays;
+                                            if (gunSayi < 5)
+                                            {
+                                                <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">YENİ</span>
+                                            }
+                                        }
+                                        @*<span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block ml-8">Sale</span>*@
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+                        <div class="col-12 pt-3 mb-lg-0 mb-md-6 mb-3">
+                            <!-- pagination -->
+                            <ul class="list-unstyled pagination d-flex justify-content-center align-items-end">
+                                <li><a href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>
+                                <li class="active"><a href="javascript:void(0);">1</a></li>
+                                <li><a href="javascript:void(0);">2</a></li>
+                                <li>...</li>
+                                <li><a href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-lg-3 order-lg-1">
+                <!-- sidebar -->
+                <aside id="sidebar">
+                    <!-- widget -->
+                    <section class="widget overflow-hidden mb-9">
+                        <form action="/Home/List/" class="searchForm position-relative border" method="get">
+                            <fieldset>
+                                <input type="search" class="form-control" name="q" placeholder="Ürün Ara">
+                                <button type="submit" class="position-absolute"><i class="icon-search"></i></button>
+                            </fieldset>
+                        </form>
+                    </section>
+                    <!-- widget -->
+                    <section class="widget overflow-hidden mb-9">
+                        <h3 class="headingVII fwEbold text-uppercase mb-5">Ürün Kategorileri</h3>
+                        <ul class="list-unstyled categoryList mb-0">
+                            <li class="mb-5 overflow-hidden"><a href="/Home/List">Tüm Kategoriler <span class="num border float-right">@Model.Products.Count()</span></a></li>
+                            @foreach (var cat in Model.Categories)
+                            {
+                                <li class="mb-5 overflow-hidden"><a href="/Home/List/@cat.Id">@cat.Name <span class="num border float-right"></span></a></li>
+
+                            }
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>

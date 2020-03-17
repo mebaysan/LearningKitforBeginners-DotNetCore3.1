@@ -1,0 +1,150 @@
+﻿@model  ECommerce.MVC.Web.Models.ProductDetailViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<main>
+    <!-- introBannerHolder -->
+    <section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(/Uploads/Product/1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
+                    <h1 class="headingIV fwEbold playfair mb-4">Detay</h1>
+                    <ul class="list-unstyled breadCrumbs d-flex justify-content-center">
+                        <li class="mr-2"><a href="home.html">Anasayfa</a></li>
+                        <li class="mr-2">/</li>
+                        <li class="mr-2"><a href="shop.html">Ürün</a></li>
+                        <li class="mr-2">/</li>
+                        <li class="active">@Model.Prod.Name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- twoColumns -->
+    <div class="twoColumns container pt-xl-23 pb-xl-20 pt-lg-20 pb-lg-20 py-md-16 py-10">
+        <div class="row mb-6">
+            <div class="col-12 col-lg-6 order-lg-1">
+                <!-- productSliderImage -->
+                <div class="productSliderImage mb-lg-0 mb-4">
+                    <div>
+                        <img src="~/Uploads/Product/@Model.Prod.Image" alt="image description" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <img src="~/Uploads/Product/@Model.Prod.Image" alt="image description" class="img-fluid w-100">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-3">
+                <!-- productTextHolder -->
+                <div class="productTextHolder overflow-hidden">
+                    <h2 class="fwEbold mb-2">@Model.Prod.Name</h2>
+                    <strong class="price d-block mb-5 text-green">@Model.Prod.Price ₺</strong>
+                    <p class="mb-5">@Model.Prod.Description</p>
+                    <ul class="list-unstyled productInfoDetail mb-5 overflow-hidden">
+                        <li class="mb-2">Ürün Kodu: <span>Ürün Kodu Yok</span></li>
+                        <li class="mb-2">Adet: <span>1 Adet</span></li>
+                        <li class="mb-2">Kargo Ücreti: <span>Ücretsiz</span></li>
+                    </ul>
+                    <div class="holder overflow-hidden d-flex flex-wrap mb-6">
+                        <input type="number" placeholder="1">
+                        <a href="javascript:void(0);" class="btn btnTheme btnShop fwEbold text-white md-round py-3 px-4 py-md-3 px-md-4">Sepete Ekle <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <ul class="list-unstyled productInfoDetail mb-0">
+                        <li class="mb-2">
+                            Kategoriler:
+                            <a href="javascript:void(0);">
+                                @Model.Prod.CategoryId
+                            </a>
+                        </li>
+                        <li>Marka: <a href="javascript:void(0);">Corona Sepeti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- paggSlider -->
+                <div class="paggSlider">
+
+                    <div>
+                        <div class="imgBlock">
+                            <img src="~/Uploads/Product/@Model.Prod.Image" alt="image description" class="img-fluid">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="imgBlock">
+                            <img src="~/Uploads/Product/@Model.Prod.Image" alt="image description" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- tabSetList -->
+                <ul class="list-unstyled tabSetList d-flex justify-content-center mb-9">
+                    <li class="mr-md-20 mr-sm-10 mr-2">
+                        <a href="#tab1-0" class="active playfair fwEbold pb-2">Ürün Açıklaması</a>
+                    </li>
+
+                </ul>
+                <!-- tab-content -->
+                <div class="tab-content mb-xl-11 mb-lg-10 mb-md-8 mb-5">
+                    <div id="tab1-0" class="active">
+                        <p>@Model.Prod.Description</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- featureSec -->
+    <section class="featureSec container overflow-hidden pt-xl-12 pb-xl-29 pt-lg-10 pb-lg-14 pt-md-8 pb-md-10 py-5">
+        <div class="row">
+            <!-- mainHeader -->
+            <header class="col-12 mainHeader mb-5 text-center">
+                <h1 class="headingIV playfair fwEblod mb-4">İlgili Ürünler</h1>
+            </header>
+        </div>
+        <div class="row">
+            <!-- featureCol -->
+            @foreach (var item in Model.RelatedProducts)
+            {
+                <div class="col-12 col-sm-6 col-lg-3 featureCol position-relative mb-7">
+                    <div class="border">
+                        <div class="imgHolder position-relative w-100 overflow-hidden">
+                            <img src="~/Uploads/Product/@item.Image" alt="image description" class="img-fluid w-100">
+                            <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
+                                <li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-heart d-block"></a></li>
+                                <li class="mr-2 overflow-hidden"><a href="javascript:void(0);" class="icon-cart d-block"></a></li>
+                                <li class="mr-2 overflow-hidden"><a href="/Home/Details/@item.Id" class="icon-eye d-block"></a></li>
+                                <li class="overflow-hidden"><a href="javascript:void(0);" class="icon-arrow d-block"></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center py-5 px-4">
+                            <span class="title d-block mb-2"><a href="/Home/Details/@item.Id">@item.Name</a></span>
+                            <span class="price d-block fwEbold">@item.Price ₺</span>
+                            @{
+                                TimeSpan kacGun = DateTime.Now - item.AddedTime;
+                                double gunSayi = kacGun.TotalDays;
+                                if (gunSayi < 5)
+                                {
+                                    <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">YENİ</span>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </section>
+
+    <!-- footerHolder -->
+
+</main>
