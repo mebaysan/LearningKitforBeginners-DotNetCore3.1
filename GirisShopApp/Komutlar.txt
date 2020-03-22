@@ -1,0 +1,1 @@
+dotnet new globaljson --sdk-version 3.1.200 -> global bir json oluşturduk. Hangi dotnet versiyonu ile çalışacağımızı belirttik ( dotnet --version yazınca gelen versiyonu yazabiliriz)

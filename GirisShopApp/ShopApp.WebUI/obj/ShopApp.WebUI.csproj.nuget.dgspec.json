@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCore3.1-Intro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj": {}
+    "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\GirisShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCore3.1-Intro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj": {
+    "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\GirisShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCore3.1-Intro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj",
-        "projectName": "ASPNetCoreIntro",
-        "projectPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCore3.1-Intro\\ASPNetCoreIntro\\ASPNetCoreIntro.csproj",
+        "projectUniqueName": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\GirisShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj",
+        "projectName": "ShopApp.WebUI",
+        "projectPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\GirisShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj",
         "packagesPath": "C:\\Users\\menes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\ASPNetCore3.1-Intro\\ASPNetCoreIntro\\obj\\",
+        "outputPath": "C:\\Users\\menes\\Desktop\\LearningKitforBeginners-DotNetCore3.1\\GirisShopApp\\ShopApp.WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\menes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,12 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
